@@ -144,7 +144,7 @@
     "secondaryTemplateUrl": "[concat(variables('environment').templateBaseUrl, 'secondary-resources.json')]",
     "namespace": "mongodb-",
     "virtualNetworkName": "myVNET1",
-    "numDataDisks": "4",
+    "numDataDisks": "1",
     "apiVersion": "2015-01-01",
     "networkSettings": {
       "virtualNetworkName": "[variables('virtualNetworkName')]",
