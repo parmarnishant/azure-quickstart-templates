@@ -12,7 +12,7 @@ disk_format() {
 	do
 		wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/shared_scripts/ubuntu/vm-disk-utils-0.1.sh 
 		if [[ -f /tmp/vm-disk-utils-0.1.sh ]]; then
-			bash /tmp/vm-disk-utils-0.1.sh -b /var/lib/mongo -s
+			bash /tmp/vm-disk-utils-0.1.sh -b /var/lib/mongo
 			if [[ $? -eq 0 ]]; then
 				sed -i 's/disk1//' /etc/fstab
 				umount /var/lib/mongo/disk1
